@@ -1,0 +1,37 @@
+1st:
+- Import the Project > Open IntelliJ IDEA.
+- Click File > New > Project from Existing Sources and navigate to your Project Folder.
+- Select the folder and import it.
+
+2nd:Set Up Project SDK
+- Go to File > Project Structure or press Ctrl + Alt + Shift + S.
+- Under Project Settings > Project, select the Project SDK as your installed JDK.
+	- If no SDK is configured, click Add SDK > JDK and navigate to your JDK installation folder.
+3rd:
+- Add Selenium JAR to Classpath
+- Right-click the project folder in the Project Explorer and select Open Module Settings.
+- Under Modules, go to the Dependencies tab.
+- Click the + button and select JARs or directories.
+- Add the file selenium-server-4.27.0.jar located in the project folder.
+- Ensure the scope is set to Compile.
+or,
+- WebDriver Path Setup: Place your chromedriver.exe inside the Drivers folder.
+- Selenium JAR: Include selenium-server-4.27.0.jar in your project’s classpath.
+- Package: The package name is sampleapp.
+
+4th:Configure Run/Debug Configurations
+- Go to Run > Edit Configurations.
+- Click the + button and select Application.
+- Set the following:
+	-Name: Give your configuration a name (e.g., "Run Selenium Tests").
+	-Main class: Select the main class (e.g., sampleapp.practice).
+	-Working directory: Set it to your Project Folder.
+	-Classpath of Module: Ensure the Selenium JAR is included in the classpath.
+ 
+5th: To execute all test classes from a single entry point, modify practice.java:
+- Running the Entire Project
+- Open practice.java in IntelliJ.
+- Click the Run button (or press Shift + F10).
+- IntelliJ will compile and execute the program, launching Chrome for each test.
+
+

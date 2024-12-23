@@ -1,0 +1,20 @@
+package sampleapp;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class practice {
+    public static void main(String[] args) {
+        // Correctly set the ChromeDriver system property
+        System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
+
+        // Initialize the WebDriver
+        WebDriver driver = new ChromeDriver();
+
+        // Open the specified URL
+        driver.get("https://demo.guru99.com/test/login.html");
+
+        // Close the browser
+
+    }
+}

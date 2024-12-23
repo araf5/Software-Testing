@@ -1,0 +1,71 @@
+https://www.youtube.com/watch?v=dbzc9UbFZt8
+
+Step 1:
+Open Intellij site and download software from community (free edition)
+Check Java version: java --version
+Open Intellij  > New Project > Next > Next > Give name
+Right click on "src" > New > Package > Name "sampleapp"
+Right click on "sampleapp" > New > Java Class > Name "Practice"
+Write code: Type "main" then auto complete
+
+Step 2:
+Go: https://www.selenium.dev/downloads/
+Click on right side of "Selenium Server Grid", Latest Selenium 4 Beta Version or Stable version
+Download
+
+Step 3:
+Now, open that downloaded Selenium in Intellij 
+
+Step 4:
+Open, Intellij > File > Project Structure > Moduels > Dependencies > Go down > Click on
+"+" sign > Click on Jars or Directories > Locate that Selenium downloaded file > Apply
+
+Step 5:
+(Now,
+Set Up ChromeDriver:
+Go: https://www.selenium.dev/downloads/
+Click on "+-Browser" > Google Chrome > Click-  documentation 
+Click on Download in "The older releases can be found at the Downloads page"
+Click on " the Chrome for Testing availability dashboard"
+Copy the link from "chromedriver	win64 ...zip   200" almost 9-10 MB
+Open that link > Unzip > Take only "chromedriver.exe" > Keep this file into C drive in "Drivers" folder
+Copy this file's location/path by right click on it.
+)
+
+Step 6:
+Open that project in Intellij.
+Click "Selenium Server 4..." left side in External Libraries
+Now, write & modify the code into main function
+
+ {
+    public static void main(string[] args){
+	System.setProperty(webdriver.chrome.driver","paste that copied path");
+	WebDriver driver=new ChromeDriver();
+	
+Final Code:
+package sampleapp;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class practice {
+    public static void main(String[] args) {
+        // Correctly set the ChromeDriver system property
+        System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
+
+        // Initialize the WebDriver
+        WebDriver driver = new ChromeDriver();
+
+        // Open the specified URL
+        driver.get("https://demo.guru99.com/test/login.html");
+
+        // Close the browser
+
+    }
+}
+
+
+Then: Run
+
+
+Practice:

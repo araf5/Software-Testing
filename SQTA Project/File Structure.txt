@@ -1,0 +1,20 @@
+selenium-testing-project/
+├── Drivers/
+│   └── chromedriver.exe        # ChromeDriver executable for Selenium WebDriver
+├── sampleapp/
+│   ├── FunctionalTests.java    # Tests for login, cart, checkout, and payment
+│   ├── InputValidationTests.java # Tests for input validation (special characters, long inputs)
+│   ├── EdgeCaseTests.java      # Tests for edge cases (min/max character length)
+│   ├── SecurityTests.java      # Tests for security (e.g., brute force prevention)
+│   ├── DriverSetup.java        # Utility for initializing WebDriver
+│   ├── AccountCreationTest.java      # Full account creation and order process
+│   ├── SecurityTests.java            # SQL Injection testing
+│   ├── practice.java           # Main runner file to execute all test classes
+├── libs/                       # (Optional) Selenium JAR files if not using Maven/Gradle
+│   ├── selenium-server.jar
+│   ├── selenium-java.jar
+│   └── (other required JAR files)
+├── .gitignore                  # Ignored files/folders for Git
+├── README.md                   # Documentation for the project
+└── LICENSE                     # (Optional) License file for the project
+

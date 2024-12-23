@@ -1,0 +1,45 @@
+
+---
+
+### **.gitignore**
+
+```plaintext
+# Logs
+*.log
+
+# Compiled files
+*.class
+
+# Drivers
+Drivers/chromedriver.exe
+
+# IDE-specific files
+*.iml
+.idea/
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Build artifacts
+out/
+build/
+
+# JAR dependencies (optional if using Maven/Gradle)
+*.jar
+libs/
+
+# Ignore README.md (if needed)
+# !README.md
+
+
+---
+
+This `README.md` now includes full credit to you, Md Yeasin Arafat, along with your email address for proper attribution. Let me know if you'd like to add or change anything!
